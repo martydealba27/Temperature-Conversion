@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--
+    MARTY DE ALBA
+    CIS111 Lab06
+    Fahrenheit to Celsius temperature converter
+    -->
+        <title>Marty De Alba</title>
+    </head>
+
+    <body>
+        <h1>Temperature Converter</h1>
+
+        <script>
+            "use strict";
+
+            //Use prompt to “Input a Fahrenheit temperature”.
+            //Store in a variable (create a meaningful name).
+
+            let far = parseFloat(prompt("Input a Fahrenheit temperature:")).toFixed(1);
+            console.log("Fahrenheit is " + far)
+            
+
+            //Convert to Celsius, store in another variable (create a meaningful name)
+
+            let cel = parseFloat((far - 32) * 5 / 9).toFixed(1);
+            console.log(cel);
+            console.log("Celcuis is " + cel);
+
+            //Create a string with the html to display the output as shown below in paragraph tags.
+            //Use toFixed(1) to display both temperatures with 1 decimal place.  
+
+            //used fix 1 in earlier on in file 
+            //crossferenced inspection --> console to verify decimals were correct
+
+            console.log(far + " is equal to " + cel + " celcuis.")
+
+            //Use document.write to display the results on your html page
+
+           console.log(far);
+           console.log(cel);
+
+            let printfar = "<p>Fahrenheit=" + far + "</p>";
+            console.log(printfar);
+            document.write(printfar);
+
+            let printcel = "<p>Celcuis= " + cel + "</p>";
+            console.log(printcel);
+            document.write(printcel)
+        
+        </script>
+
+        
+    </body>
+    <!--
+    Use the <title> element in the document head to display your name in the title bar of the browser.
+    HTML body should have a h1 element with "Temperature Converter".
+    You will put the JavaScript commands at the end of the body of your HTML file inside script tags.
+
+    Your application will convert Fahrenheit temperature to Celsius.  The user will enter the Fahrenheit temperature in the prompt dialog box.  The formula to convert from farenheit to celsius is: 
+
+    celsius = (fahrenheit - 32) * 5 / 9
+
+    Use this outline for your code (INCLUDE THESE COMMENTS)
+
+    "use strict";
+    -->
+</html>
+
